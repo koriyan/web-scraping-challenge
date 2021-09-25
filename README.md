@@ -2,17 +2,17 @@
 
 ![mission_to_mars](Images/mission_to_mars.png)
 
-In this challenge, you will build a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page. The following outlines what you need to do.
+In this challenge, I have built a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page. Here are the outlines what I have done.
 
 ## Step 1 - Scraping
 
-Complete your initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter.
+Complete the initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter.
 
-* Create a Jupyter Notebook file called `mission_to_mars.ipynb` and use this to complete all of your scraping and analysis tasks. The following outlines what you need to scrape.
+* Create a Jupyter Notebook file called `mission_to_mars.ipynb` and use this to complete all of the scraping and analysis tasks. 
 
 ### NASA Mars News
 
-* Scrape the [Mars News Site](https://redplanetscience.com/) and collect the latest News Title and Paragraph Text. Assign the text to variables that you can reference later.
+* Scrape the [Mars News Site](https://redplanetscience.com/) and collect the latest News Title and Paragraph Text. Assign the text to variables that I can reference later.
 
 ### JPL Mars Space Images - Featured Image
 
@@ -46,26 +46,15 @@ Complete your initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, an
 
 Use MongoDB with Flask templating to create a new HTML page that displays all of the information that was scraped from the URLs above.
 
-* Start by converting your Jupyter notebook into a Python script called `scrape_mars.py` with a function called `scrape` that will execute all of your scraping code from above and return one Python dictionary containing all of the scraped data.
+* Start by converting your Jupyter notebook into a Python script called `scrape_mars.py` with a function called `scrape` that will execute all the scraping code from above and return one Python dictionary containing all of the scraped data.
 
-* Next, create a route called `/scrape` that will import your `scrape_mars.py` script and call your `scrape` function.
+* Next, create a route called `/scrape` that will import the `scrape_mars.py` script and call the `scrape` function.
 
   * Store the return value in Mongo as a Python dictionary.
 
 * Create a root route `/` that will query your Mongo database and pass the mars data into an HTML template to display the data.
 
-* Create a template HTML file called `index.html` that will take the mars data dictionary and display all of the data in the appropriate HTML elements. Use the following as a guide for what the final product should look like, but feel free to create your own design.
-
-![final_app_part1.png](Images/final_app.png)
+* Create a template HTML file called `index.html` that will take the mars data dictionary and display all of the data in the appropriate HTML elements. 
 
 - - -
 
-## Step 3 - Submission
-
-To submit your work to BootCampSpot, submit the following:
-
-1. The Jupyter Notebook containing the scraping code used.
-
-2. Screenshots of your final application.
-
-3. Submit the link to your new repository to BootCampSpot. Please ensure your repository has regular commits and a thorough README.md file.
